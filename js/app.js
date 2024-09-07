@@ -4,7 +4,7 @@ function search() {
   let resultsDiv = document.getElementById("resultados-pesquisa");
   let inputSearch = document.getElementById("pesquisa").value;
 
-  if (!inputSearch) {
+  if (!inputSearch || inputSearch == " ") {
     resultsDiv.innerHTML = `
     <div class="item-resultado">
       <div class="descricao__card">
