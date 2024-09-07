@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machu Picchu - A Maravilha do Peru</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho fixo no topo da página -->
+    <header>
+      <!-- Logo do site -->
+      <div class="logo__hero">
+        <a href="#"><img src="./img/Logo_hero.png" alt="" /></a>
+      </div>
+      <nav>
+        <!-- Navegação principal do site -->
+        <a href="#">Sobre o destino</a>
+        <a href="#">Atrações</a>
+        <a href="#">Mapa</a>
+        <a href="#">Fotos</a>
+      </nav>
+      <div class="nav__buttons">
+        <!-- Botões de autenticação (Entrar e Cadastre-se) -->
+        <button class="btn btn__white">Entrar</button>
+        <button class="btn btn__red">Cadastre-se</button>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="main__content">
+      <section>
+        <!-- Título principal e descrição do site -->
+        <div class="title__hero">
+          <h1>Machu Picchu - A Maravilha do Peru</h1>
+          <p>Descubra a antiga cidade inca perdida nas alturas dos Andes.</p>
+          <div class="text__attractions">
+            <!-- Lista de atrações -->
+            <ul>
+              <li>
+                <i class="fa-regular fa-circle-dot"></i> Machu Picchu - A
+                Cidadela Inca
+              </li>
+              <li><i class="fa-regular fa-circle-dot"></i> Templo do Sol</li>
+              <li><i class="fa-regular fa-circle-dot"></i> Intihuatana</li>
+              <li><i class="fa-regular fa-circle-dot"></i> Huayna Picchu</li>
+              <li><i class="fa-regular fa-circle-dot"></i> Templo da Lua</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Seção de pesquisa -->
+        <div class="search">
+          <div class="search_elements">
+            <!-- Campo de entrada e botão de pesquisa -->
+            <input
+              type="text"
+              id="pesquisa"
+              name="pesquisa"
+              placeholder="Digite o atrativo que deseja buscar... "
+            />
+            <button class="btn__seacrh" onclick="search()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="search">
+            <div class="search_elements"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resultados de pesquisa -->
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+      <p>
+        &copy; <span id="year"></span> <a href="#"> - Miguel Sánchez</a>. Todos
+        os direitos reservados.
+      </p>
+    </footer>
+
+    <!-- Scripts JavaScript externos -->
+    <!-- Font Awesome para ícones -->
+    <script
+      src="https://kit.fontawesome.com/3f3f796a57.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts personalizados -->
+    <script src="./js/header.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
